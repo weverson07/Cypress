@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-28T20:22:39.038Z",
+    "end": "2022-10-28T20:23:13.559Z",
+    "duration": 34521,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74636c83-440b-485a-9c42-8339d3feb6bb",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\vrTesteValidacao.spec.js",
+      "file": "cypress\\integration\\examples\\vrTesteValidacao.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ccbc6d9b-2967-4b6d-9f38-c99d6730e603",
+          "title": "Local Storage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessando a página de VR e realizando uma pesquisa no mapa localizado no site",
+              "fullTitle": "Local Storage Acessando a página de VR e realizando uma pesquisa no mapa localizado no site",
+              "timedOut": null,
+              "duration": 31119,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('https://www.vr.com.br/')\n//Clique aceitar os cookies sendo realizado\ncy.get('.lum-first').click(); // Scroll utilizado para descer a página até o próximo elemento\ncy.scrollTo(983, 350); // Elemento expecionado e clicado na label Pra você\n//Localizando label com campo Pra você\ncy.get(':nth-child(3) > .vr-quick-navigation__link > .vr-quick-navigation__label').click(); // Clique realizado no botão onde usar o cartão\n//Localizando botâo onde usar o cartão VR?\ncy.get('.vr-hero__actions > .vr-button--negative').click(); //Incrementei realizando a pesquisa de uma localidade do campo pesquisa\n//Após clicar no botâo onde usar o cartão VR? realizo a pesquisa se algum lugar para pesquisa\ncy.get('#endereco').type('sâo paulo').first().focus().should('be.visible');\ncy.get('.icon-search').click(); //Utilizei um espera para verificar o carregamento do campo de seleÇâo\ncy.wait(2);\ncy.get('[data-place-id=\"ChIJ0WGkg4FEzpQRrlsz_whLqZs\"]').should('be.visible').click();",
+              "err": {},
+              "uuid": "edc4f451-27a0-44ba-b2c4-d2b074309975",
+              "parentUUID": "ccbc6d9b-2967-4b6d-9f38-c99d6730e603",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "edc4f451-27a0-44ba-b2c4-d2b074309975"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 31119,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
