@@ -10,7 +10,7 @@ npm install cypress --save-dev
 
 Em alguns casos será necessário executar o comando abaixo:
 
-~~run npm init~~
+-run npm init-
 
 **Dúvidas:**
 https://docs.cypress.io
@@ -25,11 +25,11 @@ O teste realizado se encontra na pasta integration devido ser uma configuração
 
 **Versâo do Cypress utilizada:**
 
-~~8.3.1~~
+-8.3.1-
 
 **Versâo do node.js utilizada:**
 
-~~17.1~~
+-17.1-
 
 **Comandos úteis:**
 - brew install allure (ou similar para seu sistema operacional)
@@ -42,8 +42,8 @@ O teste realizado se encontra na pasta integration devido ser uma configuração
 
 ***Relatórios:***
 
-~~Allure Reports~~
+-Allure Reports-
 
-~~Allure Reports Plugin~~
+-Allure Reports Plugin-
 
-~~npm-run-all~~
+-npm-run-all-
